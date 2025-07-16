@@ -1,0 +1,240 @@
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin-bottom: 60px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #0078D4;
+  border-color: #0078D4;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #006cbe;
+  border-color: #006cbe;
+  transform: translateY(-1px);
+}
+
+.btn-outline-secondary {
+  color: #0078D4;
+  border-color: #0078D4;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f0f7ff;
+  color: #0078D4;
+  transform: translateY(-1px);
+}
+
+/* Form styling */
+.form-floating {
+  margin-bottom: 1rem;
+}
+
+.form-control:focus {
+  border-color: #0078D4;
+  box-shadow: 0 0 0 0.25rem rgba(0, 120, 212, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: #0078D4;
+  border-color: #0078D4;
+}
+
+.form-check-input:focus {
+  border-color: #0078D4;
+  box-shadow: 0 0 0 0.25rem rgba(0, 120, 212, 0.25);
+}
+
+/* Card styling */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+}
+
+/* Home page */
+.welcome-section {
+  padding: 4rem 0;
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile and account */
+.account-sidebar {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.profile-image-container {
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #0078D4;
+}
+
+.default-profile-image {
+  width: 120px;
+  height: 120px;
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.list-group-item.active {
+  background-color: #0078D4;
+  border-color: #0078D4;
+}
+
+.list-group-item {
+  border-radius: 5px !important;
+  margin-bottom: 5px;
+  border: 1px solid #eee;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-container,
+.register-container,
+.forgot-password-container,
+.reset-password-container,
+.manage-account-container,
+.confirm-email-container,
+.forgot-password-confirmation,
+.reset-password-confirmation,
+.register-confirmation,
+.access-denied-container,
+.error-container {
+  animation: fadeIn 0.5s ease-out;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Error and Success Icons */
+.success-icon {
+  color: #107C10;
+}
+
+.error-icon {
+  color: #E81123;
+}
+
+/* Responsive navbar */
+.navbar {
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #0078D4;
+}
+
+/* Transition effects */
+.btn, .form-control, .nav-link {
+  transition: all 0.2s ease-in-out;
+}
+
+input.valid {
+  border-color: #107C10 !important;
+}
+
+input.invalid {
+  border-color: #E81123 !important;
+}
+
+.validation-message {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Privacy Policy Page */
+.privacy-policy {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-policy h4 {
+  color: #0078D4;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .account-sidebar {
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-image, .default-profile-image {
+    width: 80px;
+    height: 80px;
+  }
+}

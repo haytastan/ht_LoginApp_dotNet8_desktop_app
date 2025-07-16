@@ -1,0 +1,59 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="home-container">
+    <div class="welcome-section text-center">
+        <h1 class="display-4 mb-4">Welcome to LoginApp</h1>
+        <p class="lead">A secure and modern authentication system built with .NET 9.0</p>
+        
+        @if (!User.Identity?.IsAuthenticated ?? true)
+        {
+            <div class="mt-5 d-flex justify-content-center">
+                <a asp-controller="Account" asp-action="Register" class="btn btn-primary me-3">Register</a>
+                <a asp-controller="Account" asp-action="Login" class="btn btn-outline-secondary">Login</a>
+            </div>
+        }
+        else
+        {
+            <div class="mt-5">
+                <h4>You're logged in!</h4>
+                <p>Manage your account or explore the features of our secure application.</p>
+                <a asp-controller="Account" asp-action="Manage" class="btn btn-primary mt-2">Manage Account</a>
+            </div>
+        }
+    </div>
+
+    <div class="features-section mt-5">
+        <h2 class="text-center mb-4">Key Features</h2>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Secure Authentication</h5>
+                        <p class="card-text">Industry-standard security practices with password hashing and protection against common vulnerabilities.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Management</h5>
+                        <p class="card-text">Update your profile, change password, and manage your personal information securely.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Role-Based Access</h5>
+                        <p class="card-text">Different permission levels ensure users can only access appropriate content and features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
