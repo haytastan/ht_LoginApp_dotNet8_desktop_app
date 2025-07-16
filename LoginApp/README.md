@@ -1,6 +1,6 @@
-# LoginApp - .NET 9.0 Authentication System
+# LoginApp - .NET 8.0 Authentication System
 
-A modern, secure, and user-friendly authentication system built with .NET 9.0 and ASP.NET Core Identity.
+A modern, secure, and user-friendly authentication system built with .NET 8.0 and ASP.NET Core Identity.
 
 ## Features
 
@@ -38,8 +38,8 @@ A modern, secure, and user-friendly authentication system built with .NET 9.0 an
 ### Prerequisites
 
 - Visual Studio 2022
-- .NET 9.0 SDK
-- SQL Server (or LocalDB)
+- .NET 8.0 SDK
+- PostgreSQL 16
 
 ### Setup
 
